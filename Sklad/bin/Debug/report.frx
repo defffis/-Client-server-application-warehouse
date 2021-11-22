@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="11/08/2021 09:50:40" ReportInfo.Modified="11/10/2021 12:44:06" ReportInfo.CreatorVersion="2021.4.12.0">
+  <Dictionary>
+    <MySqlDataConnection Name="Connection" ConnectionString="rijcmlqAxB5REKUT+dukMQH3sU+xeoocOuNBfV3teaWbP40Cc3MpnJys7qn010N2EOxLUIv/c9q5Z7PxU4PIUKeNXG5S2UPy9vvPaJdoJw0RyPgpjg=">
+      <TableDataSource Name="client_help" DataType="System.Int32" Enabled="true" TableName="client_help">
+        <Column Name="id_client" DataType="System.UInt32"/>
+        <Column Name="name_client" DataType="System.String"/>
+        <Column Name="id_country" DataType="System.UInt32"/>
+        <Column Name="address_client" DataType="System.String"/>
+      </TableDataSource>
+      <TableDataSource Name="country" DataType="System.Int32" Enabled="true" TableName="country">
+        <Column Name="id_country" DataType="System.UInt32"/>
+        <Column Name="country_name_min" DataType="System.String"/>
+        <Column Name="country_name_max" DataType="System.String"/>
+      </TableDataSource>
+      <TableDataSource Name="ksu_one" DataType="System.Int32" Enabled="true" TableName="ksu_one">
+        <Column Name="id_ksu" DataType="System.UInt32"/>
+        <Column Name="id_produkt" DataType="System.UInt32"/>
+      </TableDataSource>
+      <TableDataSource Name="ksu_two" DataType="System.Int32" Enabled="true" TableName="ksu_two">
+        <Column Name="id_ntn" DataType="System.Int32"/>
+        <Column Name="id_input_order" DataType="System.Int32"/>
+        <Column Name="ksu_date" DataType="System.DateTime"/>
+        <Column Name="id_client" DataType="System.Int32"/>
+        <Column Name="id_provider" DataType="System.Int32"/>
+        <Column Name="id_worker" DataType="System.Int32"/>
+        <Column Name="coming" DataType="System.Int32"/>
+        <Column Name="consumption" DataType="System.Int32"/>
+      </TableDataSource>
+      <TableDataSource Name="ntn_one" DataType="System.Int32" Enabled="true" TableName="ntn_one">
+        <Column Name="id_ntn" DataType="System.UInt32"/>
+        <Column Name="ntn_date" DataType="System.DateTime"/>
+        <Column Name="id_client" DataType="System.UInt32"/>
+        <Column Name="about_ntn" DataType="System.String"/>
+      </TableDataSource>
+      <TableDataSource Name="ntn_two" DataType="System.Int32" Enabled="true" TableName="ntn_two">
+        <Column Name="id_ntn" DataType="System.UInt32"/>
+        <Column Name="id_produkt" DataType="System.UInt32"/>
+        <Column Name="id_ksu" DataType="System.UInt32"/>
+        <Column Name="id_worker" DataType="System.UInt32"/>
+        <Column Name="requested" DataType="System.Int32"/>
+        <Column Name="released" DataType="System.Int32"/>
+      </TableDataSource>
+      <TableDataSource Name="produkt_help" DataType="System.Int32" Enabled="true" TableName="produkt_help">
+        <Column Name="id_produkt" DataType="System.UInt32"/>
+        <Column Name="name_produkt" DataType="System.String"/>
+        <Column Name="id_unit_produkt" DataType="System.UInt32"/>
+        <Column Name="unit_price_produkt" DataType="System.Decimal"/>
+      </TableDataSource>
+      <TableDataSource Name="provider_help" DataType="System.Int32" Enabled="true" TableName="provider_help">
+        <Column Name="id_provider" DataType="System.UInt32"/>
+        <Column Name="name_provider" DataType="System.String"/>
+        <Column Name="id_country" DataType="System.UInt32"/>
+      </TableDataSource>
+      <TableDataSource Name="ttn" DataType="System.Int32" Enabled="true" TableName="ttn">
+        <Column Name="id_input_order" DataType="System.UInt32"/>
+        <Column Name="date_ttn" DataType="System.DateTime"/>
+        <Column Name="id_produkt" DataType="System.UInt32"/>
+        <Column Name="input_produkt" DataType="System.Int32"/>
+        <Column Name="id_provider" DataType="System.UInt32"/>
+        <Column Name="id_ksu" DataType="System.UInt32"/>
+        <Column Name="id_worker" DataType="System.UInt32"/>
+      </TableDataSource>
+      <TableDataSource Name="unit_produkt" DataType="System.Int32" Enabled="true" TableName="unit_produkt">
+        <Column Name="id_unit_produkt" DataType="System.UInt32"/>
+        <Column Name="unit_produkt" DataType="System.String"/>
+        <Column Name="unit_produkt_full" DataType="System.String"/>
+      </TableDataSource>
+      <TableDataSource Name="users" DataType="System.Int32" Enabled="true" TableName="users">
+        <Column Name="idusers" DataType="System.UInt32"/>
+        <Column Name="users_name" DataType="System.String"/>
+        <Column Name="users_pass" DataType="System.String"/>
+        <Column Name="users_primary" DataType="System.SByte"/>
+      </TableDataSource>
+      <TableDataSource Name="worker_help" DataType="System.Int32" Enabled="true" TableName="worker_help">
+        <Column Name="id_worker" DataType="System.UInt32"/>
+        <Column Name="fio_worker" DataType="System.String"/>
+        <Column Name="post_worker" DataType="System.String"/>
+      </TableDataSource>
+      <TableDataSource Name="worker_terminated" DataType="System.Int32" Enabled="true" TableName="worker_terminated">
+        <Column Name="id_worker" DataType="System.Int32"/>
+        <Column Name="fio_worker" DataType="System.String"/>
+        <Column Name="post_worker" DataType="System.String"/>
+      </TableDataSource>
+      <TableDataSource Name="view_client_help" DataType="System.Int32" Enabled="true" TableName="view_client_help">
+        <Column Name="id_client" DataType="System.UInt32"/>
+        <Column Name="name_client" DataType="System.String"/>
+        <Column Name="country_name_min" DataType="System.String"/>
+        <Column Name="address_client" DataType="System.String"/>
+      </TableDataSource>
+      <TableDataSource Name="view_provider_help" DataType="System.Int32" Enabled="true" TableName="view_provider_help">
+        <Column Name="id_provider" DataType="System.UInt32"/>
+        <Column Name="name_provider" DataType="System.String"/>
+        <Column Name="country_name_max" DataType="System.String"/>
+      </TableDataSource>
+      <TableDataSource Name="view_produkt_help" DataType="System.Int32" Enabled="true" TableName="view_produkt_help">
+        <Column Name="id_produkt" DataType="System.UInt32"/>
+        <Column Name="name_produkt" DataType="System.String"/>
+        <Column Name="unit_price_produkt" DataType="System.Decimal"/>
+        <Column Name="unit_produkt" DataType="System.String"/>
+      </TableDataSource>
+      <TableDataSource Name="view_ttn" DataType="System.Int32" Enabled="true" TableName="view_ttn">
+        <Column Name="id_input_order" DataType="System.UInt32"/>
+        <Column Name="date_ttn" DataType="System.DateTime"/>
+        <Column Name="name_produkt" DataType="System.String"/>
+        <Column Name="input_produkt" DataType="System.Int32"/>
+        <Column Name="name_provider" DataType="System.String"/>
+        <Column Name="id_ksu" DataType="System.UInt32"/>
+        <Column Name="fio_worker" DataType="System.String"/>
+      </TableDataSource>
+      <TableDataSource Name="view_ntn_one" DataType="System.Int32" Enabled="true" TableName="view_ntn_one">
+        <Column Name="id_ntn" DataType="System.UInt32"/>
+        <Column Name="ntn_date" DataType="System.DateTime"/>
+        <Column Name="name_client" DataType="System.String"/>
+        <Column Name="about_ntn" DataType="System.String"/>
+      </TableDataSource>
+      <TableDataSource Name="view_ntn_two" DataType="System.Int32" Enabled="true" TableName="view_ntn_two">
+        <Column Name="id_ntn" DataType="System.UInt32"/>
+        <Column Name="name_produkt" DataType="System.String"/>
+        <Column Name="id_ksu" DataType="System.UInt32"/>
+        <Column Name="requested" DataType="System.Int32"/>
+        <Column Name="released" DataType="System.Int32"/>
+        <Column Name="fio_worker" DataType="System.String"/>
+      </TableDataSource>
+      <TableDataSource Name="view_input" DataType="System.Int32" Enabled="true" TableName="view_input">
+        <Column Name="id_produkt" DataType="System.UInt32"/>
+        <Column Name="sum_input_produkt" DataType="System.Decimal"/>
+        <Column Name="id_ksu" DataType="System.UInt32"/>
+      </TableDataSource>
+      <TableDataSource Name="view_relesed" DataType="System.Int32" Enabled="true" TableName="view_relesed">
+        <Column Name="id_produkt" DataType="System.UInt32"/>
+        <Column Name="sum_released" DataType="System.Decimal"/>
+        <Column Name="id_ksu" DataType="System.UInt32"/>
+      </TableDataSource>
+      <TableDataSource Name="view_balance" DataType="System.Int32" Enabled="true" TableName="view_balance">
+        <Column Name="bid_ksu" DataType="System.UInt32"/>
+        <Column Name="name_produkt" DataType="System.String"/>
+        <Column Name="input_produkt" DataType="System.Decimal"/>
+        <Column Name="released" DataType="System.Decimal"/>
+        <Column Name="balance" DataType="System.Decimal"/>
+        <Column Name="unit_produkt" DataType="System.String"/>
+        <Column Name="total_price" DataType="System.Decimal"/>
+      </TableDataSource>
+      <TableDataSource Name="view_ksu_one" DataType="System.Int32" Enabled="true" TableName="view_ksu_one">
+        <Column Name="id_ksu" DataType="System.UInt32"/>
+        <Column Name="name_produkt" DataType="System.String"/>
+        <Column Name="id_produkt" DataType="System.UInt32"/>
+        <Column Name="unit_produkt" DataType="System.String"/>
+        <Column Name="unit_price_produkt" DataType="System.Decimal"/>
+      </TableDataSource>
+      <TableDataSource Name="view_ksu_two" DataType="System.Int32" Enabled="true" TableName="view_ksu_two">
+        <Column Name="ntn_date" DataType="System.DateTime"/>
+        <Column Name="id_input_order" DataType="System.UInt32"/>
+        <Column Name="id_ntn" DataType="System.UInt32"/>
+        <Column Name="aaa" DataType="System.String"/>
+        <Column Name="name_client" DataType="System.String"/>
+        <Column Name="input_produkt" DataType="System.Decimal"/>
+        <Column Name="released" DataType="System.Decimal"/>
+        <Column Name="balance" DataType="System.Decimal"/>
+        <Column Name="total_price" DataType="System.Decimal"/>
+        <Column Name="bid_ksu" DataType="System.UInt32"/>
+      </TableDataSource>
+      <TableDataSource Name="view_slaves" DataType="System.Int32" Enabled="true" TableName="view_slaves">
+        <Column Name="Заведующий" DataType="System.String"/>
+        <Column Name="Кладовщик" DataType="System.String"/>
+        <Column Name="Грузчик" DataType="System.String"/>
+      </TableDataSource>
+    </MySqlDataConnection>
+  </Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="179.55">
+      <TextObject Name="Text15" Top="9.45" Width="718.2" Height="47.25" Text="Ведомость остатков материалов на складе № _______" HorzAlign="Center" VertAlign="Center" Font="Times New Roman, 16pt"/>
+      <TextObject Name="Text16" Left="47.25" Top="85.05" Width="113.4" Height="18.9" Text="[Date]" VertAlign="Center" Font="Times New Roman, 12pt"/>
+      <TextObject Name="Text17" Top="85.05" Width="56.7" Height="18.9" Text="Дата:" VertAlign="Center" Font="Times New Roman, 14pt"/>
+      <TextObject Name="Text18" Top="113.4" Width="122.85" Height="18.9" Text="Организация:" VertAlign="Center" Font="Times New Roman, 14pt"/>
+      <TextObject Name="Text19" Top="141.75" Width="255.15" Height="18.9" Text="Структурное подразделение:" VertAlign="Center" Font="Times New Roman, 14pt"/>
+      <LineObject Name="Line24" Left="245.7" Top="160.65" Width="283.5"/>
+      <LineObject Name="Line25" Left="122.85" Top="132.3" Width="406.35"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="182.89" Width="718.2" Height="18.9">
+      <TextObject Name="Text2" Left="28.35" Width="94.5" Height="18.9" Text="КСУ" HorzAlign="Center" VertAlign="Center" Font="Times New Roman, 12pt"/>
+      <TextObject Name="Text4" Left="122.85" Width="94.5" Height="18.9" Text="Название" HorzAlign="Center" VertAlign="Center" Font="Times New Roman, 12pt"/>
+      <TextObject Name="Text6" Left="217.35" Width="94.5" Height="18.9" Text="Поступило" HorzAlign="Center" VertAlign="Center" Font="Times New Roman, 12pt"/>
+      <TextObject Name="Text8" Left="311.85" Width="94.5" Height="18.9" Text="Реализовано" HorzAlign="Center" VertAlign="Center" Font="Times New Roman, 12pt"/>
+      <TextObject Name="Text10" Left="406.35" Width="94.5" Height="18.9" Text="Осталось" HorzAlign="Center" VertAlign="Center" Font="Times New Roman, 12pt"/>
+      <TextObject Name="Text12" Left="500.85" Width="94.5" Height="18.9" Text="Единица" HorzAlign="Center" VertAlign="Center" Font="Times New Roman, 12pt"/>
+      <TextObject Name="Text14" Left="595.35" Width="94.5" Height="18.9" Text="Стоймость" HorzAlign="Center" VertAlign="Center" Font="Times New Roman, 12pt"/>
+      <LineObject Name="Line1" Left="28.35" Width="661.5"/>
+      <LineObject Name="Line7" Left="28.35" Height="18.9"/>
+      <LineObject Name="Line8" Left="689.85" Height="18.9"/>
+      <LineObject Name="Line12" Left="122.85" Height="18.9"/>
+      <LineObject Name="Line14" Left="217.35" Height="18.9"/>
+      <LineObject Name="Line16" Left="311.85" Height="18.9"/>
+      <LineObject Name="Line18" Left="406.35" Height="18.9"/>
+      <LineObject Name="Line20" Left="500.85" Height="18.9"/>
+      <LineObject Name="Line22" Left="595.35" Height="18.9"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="205.13" Width="718.2" Height="18.9" DataSource="view_balance">
+      <TextObject Name="Text1" Left="28.35" Width="94.5" Height="18.9" Text="[view_balance.bid_ksu]" HorzAlign="Center" VertAlign="Center" Font="Times New Roman, 12pt"/>
+      <TextObject Name="Text3" Left="122.85" Width="94.5" Height="18.9" Text="[view_balance.name_produkt]" HorzAlign="Center" VertAlign="Center" Font="Times New Roman, 12pt"/>
+      <TextObject Name="Text5" Left="217.35" Width="94.5" Height="18.9" Text="[view_balance.input_produkt]" Format="Number" Format.UseLocale="true" Format.DecimalDigits="0" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="Times New Roman, 12pt" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text7" Left="311.85" Width="94.5" Height="18.9" Text="[view_balance.released]" Format="Number" Format.UseLocale="true" Format.DecimalDigits="0" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="Times New Roman, 12pt" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text9" Left="406.35" Width="94.5" Height="18.9" Text="[view_balance.balance]" Format="Number" Format.UseLocale="true" Format.DecimalDigits="0" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="Times New Roman, 12pt" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text11" Left="500.85" Width="94.5" Height="18.9" Text="[view_balance.unit_produkt]" HorzAlign="Center" VertAlign="Center" Font="Times New Roman, 12pt"/>
+      <TextObject Name="Text13" Left="595.35" Width="94.5" Height="18.9" Text="[view_balance.total_price]" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="Times New Roman, 12pt" Trimming="EllipsisCharacter"/>
+      <LineObject Name="Line4" Left="689.85" Height="18.9"/>
+      <LineObject Name="Line5" Left="689.85" Width="-661.5"/>
+      <LineObject Name="Line6" Left="28.35" Height="18.9"/>
+      <LineObject Name="Line11" Left="28.35" Top="18.9" Width="661.5"/>
+      <LineObject Name="Line13" Left="122.85" Height="18.9"/>
+      <LineObject Name="Line15" Left="217.35" Height="18.9"/>
+      <LineObject Name="Line17" Left="311.85" Height="18.9"/>
+      <LineObject Name="Line19" Left="406.35" Height="18.9"/>
+      <LineObject Name="Line21" Left="500.85" Height="18.9"/>
+      <LineObject Name="Line23" Left="595.35" Height="18.9"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="227.37" Width="718.2" Height="18.9">
+      <TextObject Name="Text20" Left="623.7" Width="94.5" Height="18.9" Text="[PageN]" HorzAlign="Center" VertAlign="Center" Font="Times New Roman, 12pt"/>
+    </PageFooterBand>
+  </ReportPage>
+</Report>

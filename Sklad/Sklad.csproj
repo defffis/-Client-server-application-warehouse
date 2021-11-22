@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{907E1ADC-48DE-4682-9D98-05EC05860919}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Sklad</RootNamespace>
+    <AssemblyName>Sklad</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="AdvancedDataGridView, Version=1.2.25902.3, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DG.AdvancedDataGridView.1.2.25902.3\lib\net40\AdvancedDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.5\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport, Version=2021.4.12.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files (x86)\FastReports\FastReport.Net Trial\Extras\Connections\FastReport.MySQL\bin\Debug\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.14.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.14.0\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.2.6\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.2.6\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.27.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.27\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.27\lib\net452\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="ZstdNet, Version=1.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.27\lib\net452\ZstdNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="autorithation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="autorithation.Designer.cs">
+      <DependentUpon>autorithation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IRegistration.cs" />
+    <Compile Include="ksu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ksu.Designer.cs">
+      <DependentUpon>ksu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ksu_ed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ksu_ed.Designer.cs">
+      <DependentUpon>ksu_ed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ntn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ntn.Designer.cs">
+      <DependentUpon>ntn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ntn_ed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ntn_ed.Designer.cs">
+      <DependentUpon>ntn_ed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ntn_ed2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ntn_ed2.Designer.cs">
+      <DependentUpon>ntn_ed2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reg.Designer.cs">
+      <DependentUpon>reg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spravka\client_help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spravka\client_help.Designer.cs">
+      <DependentUpon>client_help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spravka\country.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spravka\country.Designer.cs">
+      <DependentUpon>country.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spravka\produkt_help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spravka\produkt_help.Designer.cs">
+      <DependentUpon>produkt_help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spravka\provider_help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spravka\provider_help.Designer.cs">
+      <DependentUpon>provider_help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spravka\unit_produkt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spravka\unit_produkt.Designer.cs">
+      <DependentUpon>unit_produkt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spravka\worker_help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spravka\worker_help.Designer.cs">
+      <DependentUpon>worker_help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spravka\worker_prof.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spravka\worker_prof.Designer.cs">
+      <DependentUpon>worker_prof.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spravka\worker_terminated.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spravka\worker_terminated.Designer.cs">
+      <DependentUpon>worker_terminated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ttn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ttn.Designer.cs">
+      <DependentUpon>ttn.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="autorithation.resx">
+      <DependentUpon>autorithation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ksu.resx">
+      <DependentUpon>ksu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ksu_ed.resx">
+      <DependentUpon>ksu_ed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ntn.resx">
+      <DependentUpon>ntn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ntn_ed.resx">
+      <DependentUpon>ntn_ed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ntn_ed2.resx">
+      <DependentUpon>ntn_ed2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="reg.resx">
+      <DependentUpon>reg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spravka\client_help.resx">
+      <DependentUpon>client_help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spravka\country.resx">
+      <DependentUpon>country.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spravka\produkt_help.resx">
+      <DependentUpon>produkt_help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spravka\provider_help.resx">
+      <DependentUpon>provider_help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spravka\unit_produkt.resx">
+      <DependentUpon>unit_produkt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spravka\worker_help.resx">
+      <DependentUpon>worker_help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spravka\worker_prof.resx">
+      <DependentUpon>worker_prof.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spravka\worker_terminated.resx">
+      <DependentUpon>worker_terminated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ttn.resx">
+      <DependentUpon>ttn.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Main.datasource" />
+    <None Include="Properties\DataSources\Zuby.ADGV.AdvancedDataGridView.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon64.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
